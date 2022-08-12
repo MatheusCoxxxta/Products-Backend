@@ -14,6 +14,7 @@ import swaggerUi from 'swagger-ui-express';
 import swaggerConfig from '@config/swagger';
 import uploadConfig from '@config/upload';
 import routes from './routes';
+import graphqlConfig from '../graphql';
 
 const app = express();
 
@@ -22,6 +23,7 @@ app.use(express.json());
 app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerConfig));
 app.use('/files', express.static(uploadConfig.uploadsFolder));
 app.use(routes);
+app.use('/graphql', graphqlConfig);
 
 app.use(errors());
 

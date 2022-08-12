@@ -101,7 +101,7 @@ const products: IProducts[] = [
     categoryId: 'c3eec139-9a83-41a3-bae7-c9131b06a3b4',
     category: {
       id: 'c3eec139-9a83-41a3-bae7-c9131b06a3b4',
-      name: 'Geral',
+      name: 'Diversos',
     },
   },
 ];

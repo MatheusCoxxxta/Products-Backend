@@ -1,6 +1,6 @@
 import { celebrate, Joi, Segments } from 'celebrate';
 import { Router } from 'express';
-import ListProductsController from '../controllers/ListProductsController';
+import ListProductsController from '../controllers/v1/ListProductsController';
 
 const productRoutes = Router();
 
